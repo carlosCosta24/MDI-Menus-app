@@ -19,7 +19,9 @@ namespace MDI_app
 
         private void findClintToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Client has been Founded");
+            Form FindClient = new Form2();
+            FindClient.ShowDialog();
+
         }
 
         private void addNewClientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -30,6 +32,12 @@ namespace MDI_app
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Your are logged out!");
+        }
+
+        private void formToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form SecondForm = new Form2();
+            SecondForm.ShowDialog();
         }
     }
 }
